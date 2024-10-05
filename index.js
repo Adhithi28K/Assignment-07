@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 // Create the /say endpoint
 app.get("/say", (req, res) => {
     const keyword = req.query.keyword || "Hello";
-    const name = "Sai Adhithi"; // Replace with your desired name
+    const name = req.query.name || "Sai Adhithi"; // Get the name from the query parameters
     const responseMessage = `${name} says ${keyword}`;
     res.json({ message: responseMessage });
 });
