@@ -14,6 +14,6 @@ app.get("/say", (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server is running on port ${3000}`);
+    console.log(`Server is running on http://137.184.101.63:3000/say?keyword=hello`);
 });
 
