@@ -1,5 +1,6 @@
 // Import the required libraries
-const express = require("express");
+import express from 'express'; // Use import instead of require
+
 const app = express();
 
 // Set the port to listen on
